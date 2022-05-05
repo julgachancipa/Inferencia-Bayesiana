@@ -79,13 +79,13 @@ def calculate_probabilidad(consulta, red_bay, df_nodos):
 if __name__ == "__main__":
     print("Inferencia Bayesiana")
 
-    # red_bay = create_red_bay()
     red_bay = {
         "rain": [],
         "maintenance": ["rain"],
         "train": ["rain", "maintenance"],
         "appointment": ["train"],
     }
+    # red_bay = create_red_bay()
     print(red_bay)
 
     df_nodos = create_df_nodos(red_bay)
