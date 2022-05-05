@@ -68,7 +68,7 @@ def calculate_probabilidad(consulta, red_bay, df_nodos):
         for dependencia in red_bay[nodo]:
             # print(">>>", dependencia)
             df_nodo = df_nodo[df_nodo[dependencia]==consulta[dependencia]]
-            print(df_nodo)
+            # print(df_nodo)
 
         p = p * float(df_nodo[consulta[nodo]])
         
